@@ -35,12 +35,7 @@ kotlin {
         implementation(libs.kotest.frameworkEngine)
         implementation(libs.kotest.assertionsCore)
         implementation(libs.kotest.property)
-      }
-    }
-
-    jvmTest {
-      dependencies {
-        runtimeOnly(libs.kotest.runnerJUnit5)
+        implementation(libs.kotlin.test)
       }
     }
 
